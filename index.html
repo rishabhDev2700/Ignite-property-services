@@ -14,11 +14,20 @@
 
 <body class="m-0 antialiased">
     <div
-        class="sticky top-0 left-0 w-full py-0 bg-white shadow-md shadow-black/30 z-50 lg:flex lg:justify-around lg:items-center">
-        <div class="flex justify-between items-center w-full pr-4">
-            <header class="flex items-center z-50">
+        class="sticky top-0 left-0 py-0 bg-white shadow-md shadow-black/30 z-50 lg:flex lg:justify-center lg:items-center">
+        <nav
+            class="fixed top-0 left-0 -translate-x-full pt-24 flex flex-col w-full text-center h-screen ease-linear duration-300 bg-white lg:static lg:flex-row lg:pt-0 lg:h-auto lg:mr-24 lg:w-1/3 lg:translate-x-0 lg:justify-end lg:items-center">
+            <a class="p-4 my-4 lg:my-0 border-b-4 border-transparent hover:border-blue-400 ease-out duration-300"
+                href="index.html#services">Services</a>
+            <a class="p-4 my-4 lg:my-0 border-b-4 border-transparent hover:border-blue-400 ease-out duration-300"
+                href="index.html#contact">Contact Us</a>
+            <a class="p-4 my-4 lg:my-0 border-b-4 border-transparent hover:border-blue-400 ease-out duration-300"
+                href="about.html">About</a>
+        </nav>
+        <div class="flex justify-between items-center w-full pr-4 lg:w-28">
+            <a href="index.html">
                 <img class="mix-blend-color-burn" src="./logo.jpeg" width="120px">
-            </header>
+            </a>
             <div id="menu-button" class="z-50 lg:hidden">
                 <span id="menu-open" class="z-20">
                     <svg width="50px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -34,29 +43,29 @@
                 </span>
             </div>
         </div>
-        <nav
-            class="fixed top-0 left-0 -translate-x-full pt-24 flex flex-col w-full text-center h-screen ease-linear duration-300 bg-white lg:static lg:flex-row lg:pt-0 lg:h-auto lg:w-2/3 lg:translate-x-0 lg:items-center">
-            <a class="p-4 my-4 lg:my-0 border-b-4 border-transparent hover:border-blue-400 ease-out duration-300"
-                href="#services">Services</a>
-            <a class="p-4 my-4 lg:my-0 border-b-4 border-transparent hover:border-blue-400 ease-out duration-300"
-                href="#contact">Contact Us</a>
-            <a class="p-4 my-4 lg:my-0 border-b-4 border-transparent hover:border-blue-400 ease-out duration-300"
-                href="">About</a>
-            <div class="text-xl font-mono font-black justify-self-end ml-24">+8798432123091</div>
-        </nav>
-    </div>
-    <div>
-        <img src="./hero.jpg" class="w-full h-[70vh] object-cover brightness-75">
-        <div class="text-4xl text-white absolute top-1/3 left-1/2 -translate-x-1/2 ">Ignite Property Services
+        <div class="text-xl font-mono font-black justify-self-end ml-24 hidden lg:flex lg:w-1/3 lg:text-right">
+            +8798432123091
         </div>
+
     </div>
-    <main class="max-w-3xl mx-auto">
+    <div class="w-full h-[70vh] brightness-75 bg-fixed bg-no-repeat bg-cover bg-left-top lg:bg-left-bottom bg-blend-darken"
+        style="background-image: url('https://images.pexels.com/photos/1756957/pexels-photo-1756957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <div class="text-3xl lg:text-4xl text-white absolute top-20 left-1/2 -translate-x-1/2">
+            Keep Your Parking Areas Spotless & Safe with <br> <span
+                class="text-blue-500 font-bold text-5xl lg:text-6xl">Ignite
+                Property
+                Services</span>
+        </div>
+        <button class="absolute bottom-8 left-24 lg:top-3/4 lg:left-[43%] bg-white px-8 py-4 ">Request a free
+            quote</button>
+    </div>
+    <main class="max-w-3xl mx-auto py-8">
 
         <h2 class="text-4xl my-8 text-center">Ignite Property Services</h2>
         <article class="mx-8">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, temporibus provident aliquam fuga
-            corporis voluptatem libero dignissimos neque. Ex eum laudantium quia hic sequi beatae commodi distinctio ab
-            est rem!
+            Say goodbye to dirty, cluttered, and unsafe parking areas. <span class="text-blue-600 underline font-semibold">Ignite Property
+                Services</span> provides comprehensive cleaning and
+            marking services to keep your parking spaces looking their best and functioning smoothly.
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum saepe ullam suscipit praesentium,
             dolores ipsa, dicta doloremque nam quidem dolorum ratione deserunt repellendus commodi nesciunt libero autem
@@ -65,10 +74,10 @@
     </main>
     <section class="bg-gradient-to-br from-blue-300 to-blue-600 pt-12 my-8" id="services">
         <h2 class="text-4xl my-8 text-center">Services</h2>
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 place-items-center">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 place-items-center perspective">
             <div
-                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 ease-linear duration-200 hover:scale-105 w-72 h-72 flex flex-col items-center justify-between">
-                <div>
+                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 hover:scale-105 w-72 h-[24rem] flex flex-col items-center justify-between preserve-3d hover:rotate-y duration-700 ease-in-out">
+                <div class="backface-hidden flex flex-col items-center">
                     <svg height="120px" width="120px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 508 508" xml:space="preserve"
                         fill="#000000">
@@ -117,12 +126,18 @@
                             </g>
                         </g>
                     </svg>
+                    <div class="card-text text-xl pt-8 font-urbanist">Pressure Washing</div>
+
                 </div>
-                <div class="card-text text-xl pt-8 font-urbanist">Pressure Washing</div>
+                <div class="absolute rotate-y backface-hidden m-4">
+                    <p>Blast away dirt, grime, and stains from your parking lot, garage, or fleet vehicles.
+                        Restore curb appeal and improve safety with a deep clean.
+                        Eco-friendly solutions protect the environment.</p>
+                </div>
             </div>
             <div
-                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 ease-linear duration-200 hover:scale-105 w-72 h-72 flex flex-col items-center justify-between">
-                <div>
+                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 hover:scale-105 w-72 h-[24rem] flex flex-col items-center justify-between preserve-3d hover:rotate-y duration-700 ease-in-out">
+                <div class="backface-hidden flex flex-col items-center">
                     <svg height="120px" width="120px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
                         fill="#000000">
@@ -162,13 +177,21 @@
                             </g>
                         </g>
                     </svg>
+                    <div class="card-text text-xl pt-8 font-urbanist">Commercial parking garage washing</div>
                 </div>
-                <div class="card-text text-xl pt-8 font-urbanist">Commercial parking garage washing</div>
+                <div class="absolute rotate-y backface-hidden m-4">
+
+                    <p>
+                        Remove stubborn dirt, fumes, and pollutants from multi-level garages.
+                        Enhance air quality and reduce slip hazards for a safer parking experience.
+                        Specialized equipment tackles tight spaces and hard-to-reach areas.
+                    </p>
+                </div>
             </div>
 
             <div
-                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 ease-linear duration-200 hover:scale-105 w-72 h-72 flex flex-col items-center justify-between">
-                <div>
+                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 hover:scale-105 w-72 h-[24rem] flex flex-col items-center justify-between preserve-3d hover:rotate-y duration-700 ease-in-out">
+                <div class="backface-hidden flex flex-col items-center">
                     <svg height="120px" width="120px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
                         fill="#000000">
@@ -207,12 +230,17 @@
                             </path>
                         </g>
                     </svg>
+                    <div class="card-text text-xl pt-8 font-urbanist">Fleet cleaning</div>
                 </div>
-                <div class="card-text text-xl pt-8 font-urbanist">Fleet cleaning</div>
+                <div class="absolute rotate-y backface-hidden m-4">
+                    <p>Maintain the professional appearance of your vehicles with expert washing and detailing.
+                        Protect against damage from dirt and grime.
+                        Boost employee morale with clean and comfortable vehicles.</p>
+                </div>
             </div>
             <div
-                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 ease-linear duration-200 hover:scale-105 w-72 h-72 flex flex-col items-center justify-between">
-                <div>
+                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 hover:scale-105 w-72 h-[24rem] flex flex-col items-center justify-between preserve-3d hover:rotate-y duration-700 ease-in-out">
+                <div class="backface-hidden flex flex-col items-center">
                     <svg height="120px" width="120px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
                         fill="#000000">
@@ -223,7 +251,8 @@
                             <polygon style="fill:#3d3846;"
                                 points="237.828,280.881 204.437,280.881 204.437,205.913 455.612,205.913 455.612,99.198 397.747,99.198 397.747,65.806 489.003,65.806 489.003,239.304 237.828,239.304 ">
                             </polygon>
-                            <path style="fill:#d0d0d0;" d="M419.268,165.004H22.997V0h396.27v165.004H419.268z"></path>
+                            <path style="fill:#d0d0d0;" d="M419.268,165.004H22.997V0h396.27v165.004H419.268z">
+                            </path>
                             <path style="fill:#b7b7b7;"
                                 d="M419.268,165.004H221.133V0h198.135L419.268,165.004L419.268,165.004z"></path>
                             <path style="fill:#1a5fb4;"
@@ -233,12 +262,20 @@
                                 d="M275.849,512h-54.716V264.185H252.1l23.749,87.73L275.849,512L275.849,512z"></path>
                         </g>
                     </svg>
+                    <div class="card-text text-xl pt-8 font-urbanist">Line painting</div>
                 </div>
-                <div class="card-text text-xl pt-8 font-urbanist">Line painting</div>
+                <div class="absolute rotate-y backface-hidden m-4">
+
+                    <p>Clear and visible markings improve safety and traffic flow.
+                        Professional appearance enhances your property value.
+                        Comply with accessibility regulations for a welcoming environment.
+                        Durable paint withstands harsh weather conditions.</p>
+                </div>
+
             </div>
             <div
-                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 ease-linear duration-200 hover:scale-105 w-72 h-72 flex flex-col items-center justify-between">
-                <div>
+                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 hover:scale-105 w-72 h-[24rem] flex flex-col items-center justify-between preserve-3d hover:rotate-y duration-700 ease-in-out">
+                <div class="backface-hidden flex flex-col items-center">
                     <svg height="120px" width="120px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480" xml:space="preserve"
                         fill="#000000">
@@ -270,12 +307,19 @@
                             </g>
                         </g>
                     </svg>
+                    <div class="card-text text-xl pt-8 font-urbanist">Parking lot cleaning</div>
                 </div>
-                <div class="card-text text-xl pt-8 font-urbanist">Parking lot cleaning</div>
+                <div class="absolute rotate-y backface-hidden m-4">
+
+                    <p>Sweep away debris like leaves, trash, and dirt for a clean and tidy space.
+                        Prevent slip hazards and protect storm drains.
+                        Power sweeping options for stubborn dirt and gum removal.
+                        Regular trash can emptying maintains a pleasant environment.</p>
+                </div>
             </div>
             <div
-                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 ease-linear duration-200 hover:scale-105 w-72 h-72 flex flex-col items-center justify-between">
-                <div>
+                class="m-2 border-2 border-blue-200 text-center px-8 py-16 bg-white shadow-md shadow-transparent hover:shadow-black/50 hover:scale-105 w-72 h-[24rem] flex flex-col items-center justify-between preserve-3d hover:rotate-y duration-700 ease-in-out">
+                <div class="backface-hidden flex flex-col items-center">
                     <svg height="120px" width="120px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
                         fill="#000000">
@@ -286,7 +330,7 @@
                                 d="M345.622,371.967v-85.602c0-30.978,1.021-43.026-21.009-65.056 c-24.17-24.17-15.352-58.509-15.352-58.509h-0.925H205.618h-0.926c0,0,8.457,34.338-15.714,58.509 c-23.413,23.413-22.603,34.078-22.603,65.056v200.072c0,14.118,11.445,25.563,25.563,25.563h128.126 c14.119,0,25.564-11.446,25.563-25.564L345.622,371.967z">
                             </path>
                             <path style="fill:#414042;"
-                                d="M345.622,286.365c0-30.978,1.021-43.026-21.009-65.056c-24.17-24.172-15.352-58.509-15.352-58.509 h-0.925h-26.568c0,0-2.839,29.568,15.352,58.509c11.37,18.089,7.457,34.078,7.457,65.056v85.602l0.006,114.468 C304.583,500.554,293.137,512,279.019,512h41.046c14.119,0,25.564-11.446,25.563-25.564l-0.006-114.468v-85.602H345.622z">
+                                d="M345.622,286.365c0-30.978,1.021-43.026-21.009-65.056c-24.17-24.172-15.352-58.509-15.352-58.509 h-0.925h-26.568c0,0-2.839,29.568,15.352,58.509c11.37,18.089,7.457,34.078,7.457,65.056v85.602l0.006,114.468 C304.583,700.554,293.137,512,279.019,512h41.046c14.119,0,25.564-11.446,25.563-25.564l-0.006-114.468v-85.602H345.622z">
                             </path>
                             <g>
                                 <path style="fill:#AE7E0F;"
@@ -304,8 +348,14 @@
                             </path>
                         </g>
                     </svg>
+                    <div class="card-text text-xl pt-8 font-urbanist">Grease stain removal</div>
                 </div>
-                <div class="card-text text-xl pt-8 font-urbanist">Grease stain removal</div>
+                <div class="absolute rotate-y backface-hidden m-4">
+
+                    <p>Eliminate unsightly and hazardous grease stains from your parking surfaces.
+                        Protect asphalt and concrete from damage.
+                        Specialized techniques ensure safe and effective removal.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -324,7 +374,7 @@
             <textarea class="p-2 m-2 mx-3 border-2 border-blue-300 focus:scale-105 ease-linear duration-200 rounded-sm"
                 placeholder="Enter your message" required rows="8"></textarea>
             <input
-                class="my-4 ml-3 px-6 py-4 w-52 bg-gradient-to-br from-blue-400 to-blue-700 hover:scale-105 ease-linear duration-200 hover:shadow-md hover:shadow-blue-950 text-white"
+                class="my-4 ml-3 px-6 py-4 w-52 bg-gradient-to-br from-blue-400 to-blue-700 hover:scale-105 ease-linear duration-75 hover:shadow-md hover:shadow-blue-950 text-white"
                 type="submit" value="Send" />
         </form>
 
@@ -337,8 +387,8 @@
             <a class="" href="#contact">Contact</a>
             <a class="" href="#">About</a>
         </div>
-        <hr>
-        <div>
+        <div class="w-96 h-0.5 mx-auto bg-white/20"></div>
+        <div class="py-4">
             <a class="font-mono underline py-4" href="https://www.fuzzydevs.com">Built by Fuzzydevs</a>
             <div class="text-sm pt-2 pb-4">Copyright 2024. All Rights Reserved.</div>
         </div>
